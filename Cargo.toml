@@ -1,0 +1,10 @@
+[package]
+name = "my-ray-tracing"
+version = "0.1.0"
+authors = ["Takuya Shizukuishi <sititou70@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+image = "0.23.14"
+rand = "0.8.4"
+rayon = "1.5.1"
