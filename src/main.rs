@@ -103,10 +103,11 @@ impl Scene for RandomScene {
     fn camera(&self) -> Camera {
         Camera::from_lookat(
             Point3::new(13.0, 2.0, 3.0),
-            Point3::new(0.0, 0.0, 0.0),
+            Point3::new(0.0, 1.0, 0.0),
             Vec3::yaxis(),
             20.0,
             self.aspect(),
+            0.025,
         )
     }
     fn trace(&self, ray: Ray, depth: usize) -> Color {

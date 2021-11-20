@@ -4,10 +4,10 @@ use crate::rayt::*;
 use image::{Rgb, RgbImage};
 use rayon::prelude::*;
 
-const SCALE: f32 = 0.2;
+const SCALE: f32 = 1.0;
 const IMAGE_WIDTH: u32 = (1280.0 * SCALE) as u32;
 const IMAGE_HEIGHT: u32 = (720.0 * SCALE) as u32;
-const SAMPLES_PER_PIXEL: usize = 1;
+const SAMPLES_PER_PIXEL: usize = 32;
 const GAMMA_FACTOR: f64 = 2.2;
 const MAX_RAY_BOUNCE_DEPTH: usize = 50;
 const OUTPUT_FILENAME: &str = "render.png";
