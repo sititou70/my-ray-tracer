@@ -8,14 +8,6 @@ pub struct Camera {
     pub w: Vec3,
 }
 impl Camera {
-    pub fn new(u: Vec3, v: Vec3, w: Vec3) -> Self {
-        Self {
-            origin: Point3::zero(),
-            u,
-            v,
-            w,
-        }
-    }
     pub fn from_lookat(origin: Vec3, lookat: Vec3, vup: Vec3, vfov: f64, aspect: f64) -> Self {
         let halfh = (vfov.to_radians() * 0.5).tan();
         let halfw = aspect * halfh;
